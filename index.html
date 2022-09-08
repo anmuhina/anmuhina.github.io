@@ -1,11 +1,11 @@
 <ol>
   <li><a href="http://www.kubsu.ru/">абсолютная гиперссылка на главную страницу сайта</a></li>
   <li><a href="https://www.kubsu.ru/">абсолютная гиперссылка на главную страницу сайта в протоколе https</a></li>
-  <li><a href="ftp://example.ru/catalog/file.txt">ссылка на файл на сервере FTP без авторизации</a></li>
-  <li><a href="ftp://login:password@example.ru/catalog/file.txt">ссылка на файл на сервере FTP с авторизацией</a></li>
-  <li><a id="fragment"></a><a href="http://example.ru/#id">ссылка на фрагмент страницы некоторого сайта</a></li>
-  <li><a href="#fragment">ссылка на фрагмент текущей страницы</a></li>
-  <li><a href="http://example.ru/catalog/parameters?parameter1&parametr2">ссылка с двумя параметрами в URL</a></li>
+  <li><a href="ftp://example.com/catalog/file.txt">ссылка на файл на сервере FTP без авторизации</a></li>
+  <li><a href="ftp://login:password@example.com/catalog/file.txt">ссылка на файл на сервере FTP с авторизацией</a></li>
+  <li><a id="fragment"></a><a href="http://example.com/#id">ссылка на фрагмент страницы некоторого сайта</a></li>
+  <li><a id="fragment"></a><a href="#fragment">ссылка на фрагмент текущей страницы</a></li>
+  <li><a href="http://example.com/catalog/parameters?parameter1&parametr2">ссылка с двумя параметрами в URL</a></li>
   <li>
     <ul>
       <li><a href="https://www.kubsu.ru/" title="Официальный сайт Кубанского государственного университета">1 элемент</a></li>
@@ -25,4 +25,9 @@
       <area shape = "circle" coords = "532,409,120" href = "https://vc.ru/hr" alt = "ссылка из круглой области">
     </map>  
   </li>
+  <li><a href="about">относительная ссылка на страницу в текущем каталоге(для http://example.com/catalog/news)</a></li>
+  <li><a href="../about">относительная ссылка на страницу в каталоге уровнем выше текущего(для http://example.com/catalog/news/something)</a></li>
+  <li><a href="../../about">относительная ссылка на страницу в каталоге двумя уровнями выше текущего(для http://example.com/catalog/news/something/1)</a></li>
+  <li><a href="/">сокращенная ссылка на главную(для http://example.com/catalog/news)</a></li>
+  <li><a href="/news">сокращенная ссылка на внутреннюю папку(для http://example.com/catalog/about)</a></li>
 </ol>
