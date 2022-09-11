@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
+  <head>Задание 1</head>
 <body>
   <h1>Задание 1</h1>
   <h2>Гиперссылки</h2>
 <ol>
-  <li><a href="http://www.kubsu.ru/">абсолютная гиперссылка на главную страницу сайта</a></li>
+  <li><a href="www.kubsu.ru">абсолютная гиперссылка на главную страницу сайта</a></li>
   <li><a href="https://www.kubsu.ru/">абсолютная гиперссылка на главную страницу сайта в протоколе https</a></li>
   <li><a href="ftp://example.com/catalog/file.txt">ссылка на файл на сервере FTP без авторизации</a></li>
   <li><a href="ftp://login:password@example.com/catalog/file.txt">ссылка на файл на сервере FTP с авторизацией</a></li>
-  <li><a href="http://example.com/page#fragment">ссылка на фрагмент страницы некоторого сайта</a></li>
+  <li><a href="https://www.kubsu.ru/ru/university#block-block-9">ссылка на фрагмент страницы некоторого сайта</a></li>
   <li><a id="fragment"></a><a href="#fragment">ссылка на фрагмент текущей страницы</a></li>
   <li><a href="http://example.com/catalog/parameters?parameter1&parametr2">ссылка с двумя параметрами в URL</a></li>
   <li>
@@ -16,12 +17,13 @@
       <li><a href="https://www.kubsu.ru/" title="Официальный сайт Кубанского государственного университета">1 элемент</a></li>
       <li><a href="https://www.kubsu.ru/ru/university/library" title="Библиотека">2 элемент</a></li>
       <li><a href="https://www.kubsu.ru/ru/node/31611" title="Иностранным студентам">3 элемент</a></li>
+      <li><a href="https://www.kubsu.ru/ru/abiturient" title="Абитуриентам">4 элемент</a></li>
     </ul>
   </li>
-  <li><a>https://www.kubsu.ru/</a></li>
+  <li><a>https://www.kubsu.ru/(ссылка без href)</a></li>
   <li><a href="">ссылка с пустым href</a></li>
   <li><a href="https://www.kubsu.ru/" rel="nofollow">ссылка, по которой запрещен переход поисковикам</a></li>
-  <li><!--noindex--><a href="https://www.kubsu.ru/">ссылка, запрещенная для индексации поисковиками</a><!--/noindex--></li>
+  <li><a href="https://www.kubsu.ru/"><!--noindex-->ссылка, запрещенная для индексации поисковиками<!--/noindex--></a></li>
   <li><p>Ссылки встречаются практически на всех <a href="https://html5css.ru/html/html_links.php">веб-страницах</a>. Ссылки позволяют пользователям щелкать их путь от страницы к странице.</p></li>
   <li><a href="https://vc.ru/design"><img src="https://leonardo.osnova.io/f6258c3b-6936-7d07-c60e-093ca7de3f00/-/preview/1200/-/format/webp/" alt="изображение-ссылка"></a></li>
   <li><img src="https://leonardo.osnova.io/f6258c3b-6936-7d07-c60e-093ca7de3f00/-/preview/1200/-/format/webp/" usemap="#figures" alt="ссылки из прямоугольных и круглых областей картинки">
@@ -30,12 +32,13 @@
       <area shape = "circle" coords = "532,409,120" href = "https://vc.ru/hr" alt = "ссылка из круглой области">
     </map>  
   </li>
-  <li><a href="about">относительная ссылка на страницу в текущем каталоге(для http://example.com/catalog/news)</a></li>
-  <li><a href="/about/12">относительная ссылка на страницу в каталоге about(для http://example.com/catalog/news/something)</a></li>
-  <li><a href="../about">относительная ссылка на страницу в каталоге уровнем выше текущего(для http://example.com/catalog/news/something)</a></li>
-  <li><a href="../../about">относительная ссылка на страницу в каталоге двумя уровнями выше текущего(для http://example.com/catalog/news/something/1)</a></li>
-  <li><a href="/">сокращенная ссылка на главную(для http://example.com/catalog/news)</a></li>
-  <li><a href="/news">сокращенная ссылка на внутреннюю папку(для http://example.com/catalog/about)</a></li>
+  <li><a href="page">относительная ссылка на страницу в текущем каталоге</a></li>
+  <li><a href="about/page">относительная ссылка на страницу в каталоге about</a></li>
+  <li><a href="../page">относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+  <li><a href="../../page">относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
+  <li><a href="/">сокращенная ссылка на главную</a></li>
+  <li><a href="/page">сокращенная ссылка на внутреннюю страницу</a></li>
+  <li><a href="http://example.com/page#fragment">ссылка на фрагмент страницы некоторого сайта</a></li>
 </ol>
   <h2>Форма</h2>
   <form method="POST">
