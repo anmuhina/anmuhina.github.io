@@ -19,6 +19,7 @@ div.content {
     float: left;
 }
 header {
+    margin-top: 50%;
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
