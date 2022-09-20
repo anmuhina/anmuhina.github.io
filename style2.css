@@ -47,10 +47,6 @@
     flex-direction: column;
     padding: 20px;
 }
-#mobile_first a:visited {
-    color: rgb(51, 1, 54);
-    text-decoration: underline;
-}
 #mobile_first div.listOfLinks {
     display: flex;
     order: 3;
@@ -60,6 +56,10 @@
 #mobile_first div.listOfLinks a {
     color: rgb(95, 14, 77);
     font-size: 15px;
+}
+#mobile_first div.listOfLinks a:visited {
+    color: rgb(51, 1, 54);
+    text-decoration: none;
 }
 #mobile_first div.forma {
     display: flex;
