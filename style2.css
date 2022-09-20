@@ -47,6 +47,10 @@
     flex-direction: column;
     padding: 20px;
 }
+#mobile_first nav:hover {
+    background-color: #5488af;
+    color: #ffe;
+}
 #mobile_first div.listOfLinks {
     display: flex;
     order: 3;
