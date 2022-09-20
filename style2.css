@@ -37,10 +37,13 @@
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
 }
+#mobile_first #navigation {
+    display: flex;
+    order: 2;
+}
 #mobile_first nav {
     display: flex;
     flex-direction: column;
-    order: 2;
     padding: 20px;
 }
 #mobile_first div.listOfLinks {
@@ -51,6 +54,7 @@
 }
 #mobile_first div.listOfLinks a {
     color: rgb(95, 14, 77);
+    font-size: 15px;
 }
 #mobile_first div.forma {
     display: flex;
