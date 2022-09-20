@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Задание 3</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+<div id="mobile_first">
+<body>
+  <div class="header1">
+      <div class="content">
+          <img id="logo" src="https://cdn-icons-png.flaticon.com/512/919/919827.png" alt="Лого">
+              <header>WEB-разработка</header>
+      </div>
+  </div>
+  <div id="navigation">
+  <nav>
+      <a href="#link1">Список гиперссылок     </a><a href="#link2">    Таблица     </a><a href="#link3">     Форма</a>
+  </nav>
+  </div>
+  <div class="listOfLinks">
+  <h2 id="link1">Список гиперссылок:</h2>
+<ol>
+  <li><a href="http://www.kubsu.ru/">абсолютная гиперссылка на главную страницу сайта</a></li>
+  <li><a href="https://www.kubsu.ru/">абсолютная гиперссылка на главную страницу сайта в протоколе https</a></li>
+  <li><a href="ftp://example.com/catalog/file.txt">ссылка на файл на сервере FTP без авторизации</a></li>
+  <li><a href="ftp://login:password@example.com/catalog/file.txt">ссылка на файл на сервере FTP с авторизацией</a></li>
+  <li><a href="https://www.kubsu.ru/ru/university#block-block-7">ссылка на фрагмент страницы некоторого сайта</a></li>
+  <li><a id="fragment"></a><a href="#fragment">ссылка на фрагмент текущей страницы</a></li>
+  <li><a href="http://example.com/catalog/parameters?parameter1&parametr2">ссылка с двумя параметрами в URL</a></li>
+  <li>
+    <ul>
+      <li><a href="https://www.kubsu.ru/">Официальный сайт Кубанского государственного университета</a></li>
+      <li><a href="https://www.kubsu.ru/ru/university/library">Библиотека</a></li>
+      <li><a href="https://www.kubsu.ru/ru/node/31611">Иностранным студентам</a></li>
+      <li><a href="https://www.kubsu.ru/ru/abiturient">Абитуриентам</a></li>
+    </ul>
+  </li>
+  <li><a>https://www.kubsu.ru/(ссылка без href)</a></li>
+  <li><a href="">ссылка с пустым href</a></li>
+  <li><a href="https://www.kubsu.ru/" rel="nofollow">ссылка, по которой запрещен переход поисковикам</a></li>
+  <li><a href="https://www.kubsu.ru/"><!--noindex-->ссылка, запрещенная для индексации поисковиками<!--/noindex--></a></li>
+  <li><p>Ссылки встречаются практически на всех <a href="https://html5css.ru/html/html_links.php">веб-страницах</a>. Ссылки позволяют пользователям щелкать их путь от страницы к странице.</p></li>
+  <li><p>ссылка-изображение</p><a href="https://vc.ru/design"><img src="https://leonardo.osnova.io/f6258c3b-6936-7d07-c60e-093ca7de3f00/-/preview/1200/-/format/webp/" alt="изображение-ссылка"></a></li>
+  <li><p>ссылки из прямоугольной(левый верхний угол) и круглой(правый нижний угол) областей</p><img src="https://leonardo.osnova.io/f6258c3b-6936-7d07-c60e-093ca7de3f00/-/preview/1200/-/format/webp/" usemap="#figures" alt="ссылки из прямоугольных и круглых областей картинки">
+    <map name="figures">
+      <area shape = "rect" coords = "24,13,316,263" href = "https://vc.ru/life" alt = "ссылка из прямоугольной области">
+      <area shape = "circle" coords = "532,409,120" href = "https://vc.ru/hr" alt = "ссылка из круглой области">
+    </map>  
+  </li>
+  <li><a href="page">относительная ссылка на страницу в текущем каталоге</a></li>
+  <li><a href="about/page">относительная ссылка на страницу в каталоге about</a></li>
+  <li><a href="../page">относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+  <li><a href="../../page">относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
+  <li><a href="/">сокращенная ссылка на главную</a></li>
+  <li><a href="/page">сокращенная ссылка на внутреннюю страницу</a></li>
+</ol>
+</div>
+<div id="table1">
+  <h2 id="link2">Таблица:</h2>
+  <table>
+  <tr>
+    <td></td>
+    <th>Колонка 1</th>
+    <th>Колонка 2</th>
+    <th>Колонка 3</th>
+  </tr>
+  <tr>
+    <th>Строка 1</th>
+    <td colspan="2">Объединенные ячейки 11 и 12</td>
+    <td>Ячейка 13</td>
+  </tr>
+  <tr>
+    <th>Строка 2</th>
+    <td>Ячейка 21</td>
+    <td>Ячейка 22</td>
+    <td>Ячейка 23</td>
+  </tr>
+  <tr>
+    <th>Строка 3</th>
+    <td>Ячейка 31</td>
+    <td colspan="2">Объединенные ячейки 32 и 33</td>
+  </tr>
+  <tr>
+    <th>Строка 4</th>
+    <td>Ячейка 41</td>
+    <td>Ячейка 42</td>
+    <td>Ячейка 43</td>
+  </tr>
+  <tr>
+    <th>Строка 5</th>
+    <td colspan="3">Объединенные ячейки 51,52 и 53</td>
+  </tr>
+</table>
+</div>
+<div class="forma">
+  <h2 id="link3">Форма:</h2>
+  <form method="POST">
+    <label>
+        Имя:<br>
+        <input name="field-1" placeholder="Введите Ваше имя">
+    </label><br>
+    <label>
+        Email:<br>
+        <input name="field-email" type="email" placeholder="Введите вашу почту">
+    </label><br>
+    <label>
+        Дата рождения:<br>
+        <input name="field-date" type="date">
+    </label><br>
+    Пол:<br>
+      <label><input type="radio" checked="checked" name="radio-1"> Женщина </label>
+      <label><input type="radio" name="radio-1"> Мужчина </label><br />
+    Количество конечностей:<br />
+      <label><input type="radio" checked="checked" name="radio-2"> 2 </label>
+      <label><input type="radio" name="radio-2"> 3 </label>
+      <label><input type="radio" name="radio-2"> 4 </label><br>
+    <label>
+        Сверхспособности:<br>
+        <select name="field-2" multiple="multiple">
+          <option value="Значение1">Бессмертие</option>
+          <option value="Значение2">Прохождение сквозь стены</option>
+          <option value="Значение3">Левитация</option>
+        </select>
+    </label><br>
+    <label>
+        Биография:<br />
+        <textarea name="field-3" placeholder="Введите текст"></textarea>
+    </label><br>
+    <label><input type="checkbox" checked="checked" name="check">С контрактом ознакомлен(а)</label><br>
+    <input type="submit" value="Отправить">
+  </form>
+  </div>
+  <div class="footer1">
+    <footer>(c) Мухина Анна 2022</footer>
+  </div>
+</body>
+</div>
+</html>
