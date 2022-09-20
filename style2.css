@@ -37,7 +37,7 @@
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
 }
-#mobile_first #navigation {
+#mobile_first nav {
     display: flex;
     flex-direction: column;
     order: 2;
