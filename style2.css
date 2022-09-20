@@ -6,99 +6,99 @@
     display: flex;
     width: 100%;
 }
-div.header1 {
+#mobile_first div.header1 {
     display: flex;
     order: 1;
     border: 3px solid rgb(136, 2, 132);
     background-color: rgb(246, 146, 223);
     height: 120px;
 }
-#logo {
+#mobile_first #logo {
     margin-top: 10px;
     margin-bottom: 10px;
     width: 100px;
     height: 100px;
     float: left;
 }
-header {
+#mobile_first header {
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-style: normal;
     font-size: 60px;
 }
-h2 {
+#mobile_first h2 {
     color: black;
     font-family: 'Times New Roman', Times, serif;
 }
-#navigation a {
+#mobile_first #navigation a {
     color: rgb(136, 2, 132);
     text-decoration: none;
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
 }
-#navigation {
+#mobile_first #navigation {
     display: flex;
     flex-direction: column;
     order: 2;
     padding: 20px;
 }
-div.listOfLinks {
+#mobile_first div.listOfLinks {
     display: flex;
     order: 3;
     background-color: rgb(251, 222, 242);
     padding: 20px;
 }
-div.listOfLinks a {
+#mobile_first div.listOfLinks a {
     color: rgb(95, 14, 77);
 }
-div.forma {
+#mobile_first div.forma {
     display: flex;
     order: 3;
     background-color: rgb(251, 222, 242);
     padding: 20px;
     margin-top: 20px;
 }
-#table1 {
+#mobile_first #table1 {
     display: flex;
     order: 4;
     padding: 20px;
 }
-table {
+#mobile_first table {
     border: 3px solid rgb(72,72,72);
     border-collapse: collapse;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     width: 80%;
 }
-th {
+#mobile_first th {
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
     color: black;
 }
-td {
+#mobile_first td {
     color: rgb(202, 10, 157);
 }
-tr {
+#mobile_first tr {
     height: 50px;
     text-align: center;
 }
-td,tr,th {
+#mobile_first td,tr,th {
     border: 1px solid rgb(91, 91, 91);
 }
-div.footer1 {
+#mobile_first div.footer1 {
     display: flex;
     order: 5;
     background-color: rgb(246, 146, 223);
     margin-top: 20px;
 }
-tr:nth-child(odd) {
+#mobile_first tr:nth-child(odd) {
     background-color: rgb(251, 218, 239);
 }
-tr:nth-child(even) {
+#mobile_first tr:nth-child(even) {
     background-color: rgb(254, 157, 218);
 }
-footer {
+#mobile_first footer {
     color:black;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
