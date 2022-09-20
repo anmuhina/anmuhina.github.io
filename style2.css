@@ -54,15 +54,14 @@ div.listOfLinks a {
 }
 div.forma {
     display: flex;
-    order: 4;
+    order: 3;
     background-color: rgb(251, 222, 242);
     padding: 20px;
-    margin-bottom: 20px;
     margin-top: 20px;
 }
 #table1 {
     display: flex;
-    order: 3;
+    order: 4;
     padding: 20px;
 }
 table {
@@ -91,6 +90,7 @@ div.footer1 {
     display: flex;
     order: 5;
     background-color: rgb(246, 146, 223);
+    margin-top: 20px;
 }
 tr:nth-child(odd) {
     background-color: rgb(251, 218, 239);
