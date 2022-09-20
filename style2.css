@@ -57,7 +57,7 @@
     color: rgb(95, 14, 77);
     font-size: 15px;
 }
-#mobile_first div.listOfLinks a:visited {
+#mobile_first div.listOfLinks a: visited {
     color: rgb(51, 1, 54);
     text-decoration: none;
 }
