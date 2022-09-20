@@ -48,8 +48,7 @@
     padding: 20px;
 }
 #mobile_first #col:hover {
-    background-color: #5488af;
-    color: #ffe;
+    background-color: rgb(251, 222, 242);
 }
 #mobile_first div.listOfLinks {
     display: flex;
