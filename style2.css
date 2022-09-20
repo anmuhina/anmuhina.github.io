@@ -47,8 +47,10 @@
     flex-direction: column;
     padding: 20px;
 }
-#mobile_first #col:hover {
-    background-color: rgb(251, 222, 242);
+#mobile_first a:hover {
+    background-color: ;
+    padding: 2px;
+    color: rgb(246, 146, 223);
 }
 #mobile_first div.listOfLinks {
     display: flex;
