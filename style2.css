@@ -1,7 +1,6 @@
 #mobile_first {
     display: flex;
     flex-direction: column;
-    overflow: scroll;
 }
 #mobile_first body {
     display: flex;
