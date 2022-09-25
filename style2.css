@@ -63,14 +63,14 @@
 }
 #mobile_first div.forma {
     display: flex;
-    order: 3;
+    order: 4;
     background-color: rgb(251, 222, 242);
     padding: 20px;
     margin-top: 20px;
 }
 #mobile_first #table1 {
     display: flex;
-    order: 4;
+    order: 5;
     padding: 20px;
 }
 #mobile_first table {
