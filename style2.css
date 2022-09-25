@@ -97,7 +97,7 @@
 }
 #mobile_first div.footer1 {
     display: flex;
-    order: 5;
+    order: 6;
     background-color: rgb(246, 146, 223);
     margin-top: 20px;
 }
