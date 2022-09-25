@@ -115,7 +115,7 @@
     font-style: normal;
     font-size: 20px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1500px) {
 #mobile_first div.header1 {
     display: flex;
     order: 1;
