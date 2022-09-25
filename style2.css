@@ -40,7 +40,6 @@
 #mobile_first #navigation {
     display: flex;
     order: 2;
-    padding: 20px;
 }
 #mobile_first nav {
     display: flex;
@@ -51,7 +50,7 @@
     display: flex;
     order: 3;
     background-color: rgb(251, 222, 242);
-    padding: 20px;
+    padding: 10px;
 }
 #mobile_first div.listOfLinks a {
     color: rgb(95, 14, 77);
@@ -65,13 +64,14 @@
     display: flex;
     order: 4;
     background-color: rgb(251, 222, 242);
-    padding: 20px;
     margin-top: 20px;
+    padding: 10px;
 }
 #mobile_first #table1 {
     display: flex;
     order: 5;
-    padding: 20px;
+    padding: 10px;
+    margin-top: 10px;
 }
 #mobile_first table {
     border: 3px solid rgb(72,72,72);
@@ -99,7 +99,7 @@
     display: flex;
     order: 6;
     background-color: rgb(246, 146, 223);
-    margin-top: 20px;
+    margin-top: 10px;
 }
 #mobile_first tr:nth-child(odd) {
     background-color: rgb(251, 218, 239);
@@ -114,4 +114,50 @@
     font-weight: lighter;
     font-style: normal;
     font-size: 20px;
+}
+@media screen and (min-width: 800px) {
+#mobile_first div.header1 {
+    display: flex;
+    order: 1;
+}
+#mobile_first div.content { 
+    width: 960px;
+    margin: auto;
+}
+#mobile_first #navigation {
+    display: flex;
+    order: 2;
+    width: 960px;
+    margin: 0 auto;
+}
+#mobile_first nav {
+    display: flex;
+    flex-direction: row;
+}
+#mobile_first div.listOfLinks {
+    display: flex;
+    order: 3;
+    width: 960px;
+    margin: 0 auto;
+}
+#mobile_first div.forma {
+    display: flex;
+    order: 5;
+    width: 960px;
+    margin: auto;
+}
+#mobile_first #table1 {
+    display: flex;
+    order: 4;
+    width: 960px;
+    margin: 0 auto;
+}
+#mobile_first div.footer1 {
+    display: flex;
+    order: 6;
+    width: 100%;
+}
+#mobile_first footer {
+    margin: 0 auto;
+}
 }
