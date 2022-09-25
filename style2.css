@@ -1,7 +1,7 @@
-#mobile_first {
+/*#mobile_first {
     display: flex;
     flex-direction: column;
-}
+}*/
 #mobile_first body {
     display: flex;
     width: 100%;
