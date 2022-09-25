@@ -1,11 +1,10 @@
 #mobile_first {
     display: flex;
     flex-direction: column;
-    width: fit-content;
 }
 #mobile_first body {
     display: flex;
-    /*width: fit-content;*/
+    width: 100%;
 }
 #mobile_first div.header1 {
     display: flex;
