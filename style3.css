@@ -4,6 +4,7 @@
 }
 #mobile_first body {
     width: 100%;
+    margin: 0;
 }
 #mobile_first header {
     order: 1;
