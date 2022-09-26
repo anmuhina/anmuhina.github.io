@@ -68,13 +68,14 @@
     order: 5;
     padding: 10px;
     margin-top: 10px;
+    width: 100%;
 }
 #mobile_first table {
     border: 3px solid rgb(72,72,72);
     border-collapse: collapse;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    width: 80%;
+    /*width: 80%;*/
 }
 #mobile_first th {
     font-size: 25px;
@@ -144,9 +145,8 @@
 #mobile_first #table1 {
     display: flex;
     order: 4;
-    width: 100%;
+    width: 960px;
     margin: 0 auto;
-    padding-right: 10px;
 }
 #mobile_first div.footer1 {
     display: flex;
