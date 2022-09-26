@@ -5,7 +5,7 @@
 #mobile_first body {
     width: 100%;
 }
-#mobile_first div.header1 {
+#mobile_first header {
     order: 1;
     border: 3px solid rgb(136, 2, 132);
     background-color: rgb(246, 146, 223);
@@ -18,7 +18,7 @@
     height: 100px;
     float: left;
 }
-#mobile_first header {
+#mobile_first .logo-name {
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -29,16 +29,14 @@
     color: black;
     font-family: 'Times New Roman', Times, serif;
 }
-#mobile_first #navigation a {
+#mobile_first nav a {
     color: rgb(136, 2, 132);
     text-decoration: none;
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
 }
-#mobile_first #navigation {
-    order: 2;
-}
 #mobile_first nav {
+    order: 2;
     flex-direction: column;
     padding: 20px;
 }
@@ -90,7 +88,7 @@
 #mobile_first td,tr,th {
     border: 1px solid rgb(91, 91, 91);
 }
-#mobile_first div.footer1 {
+#mobile_first footer {
     order: 6;
     background-color: rgb(246, 146, 223);
     margin-top: 10px;
@@ -101,7 +99,7 @@
 #mobile_first tr:nth-child(even) {
     background-color: rgb(254, 157, 218);
 }
-#mobile_first footer {
+#mobile_first footer span {
     color:black;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -110,19 +108,17 @@
     font-size: 20px;
 }
 @media screen and (min-width: 800px) {
-#mobile_first div.header1 {
+#mobile_first header {
     order: 1;
 }
 #mobile_first div.content { 
     width: 960px;
     margin: auto;
 }
-#mobile_first #navigation {
-    order: 2;
-    width: 960px;
-    margin: 0 auto;
-}
 #mobile_first nav {
+    order: 2;
+    max-width: 960px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
 }
@@ -142,11 +138,11 @@
     width: 960px;
     margin: 0 auto;
 }
-#mobile_first div.footer1 {
+#mobile_first footer {
     order: 6;
     width: 100%;
 }
-#mobile_first footer {
+#mobile_first footer span {
     margin: 0 auto;
 }
 }
