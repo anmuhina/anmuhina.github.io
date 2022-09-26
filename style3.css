@@ -111,44 +111,43 @@
     font-size: 20px;
 }
 @media screen and (min-width: 800px) {
-#mobile_first .logo-name {
-    font-size: 36pt;
+#mobile_first header {
+    display: flex;
+    order: 1;
 }
 #mobile_first div.content { 
     width: 960px;
     margin: auto;
 }
 #mobile_first nav {
-    /*order: 2;*/
-    max-width: 960px;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
+    order: 2;
+    width: 960px;
+    margin: 0 auto;
 }
 #mobile_first div.listOfLinks {
-    /*order: 3;*/
+    display: flex;
+    order: 3;
     width: 960px;
     margin: 0 auto;
 }
 #mobile_first div.forma {
+    display: flex;
     order: 5;
     width: 960px;
     margin: auto;
 }
 #mobile_first #table1 {
-    /*display: flex;*/
+    display: flex;
     order: 4;
     width: 960px;
     margin: 0 auto;
 }
-#mobile_first table {
-    font-size: 14pt;
-}
 #mobile_first footer {
-    /*order: 6;*/
+    display: flex;
+    order: 6;
     width: 100%;
-}
-#mobile_first footer span {
     margin: 0 auto;
 }
 }
