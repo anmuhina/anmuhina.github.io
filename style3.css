@@ -55,6 +55,9 @@
     color: #9FA4AF;
     text-decoration: none;
 }
+#mobile_first div.listOfLinks img {
+    width: 100%;
+}
 #mobile_first div.forma {
     order: 4;
     background-color: rgb(251, 222, 242);
