@@ -1,6 +1,6 @@
 #mobile_first {
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
 }
 #mobile_first body {
     /*display: flex;*/
