@@ -1,0 +1,155 @@
+#mobile_first {
+    display: flex;
+    flex-direction: column;
+}
+#mobile_first body {
+    width: 100%;
+}
+#mobile_first div.header1 {
+    order: 1;
+    border: 3px solid rgb(136, 2, 132);
+    background-color: rgb(246, 146, 223);
+    height: 120px;
+}
+#mobile_first #logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+#mobile_first header {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 60px;
+}
+#mobile_first h2 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+#mobile_first #navigation a {
+    color: rgb(136, 2, 132);
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#mobile_first #navigation {
+    order: 2;
+}
+#mobile_first nav {
+    flex-direction: column;
+    padding: 20px;
+}
+#mobile_first div.listOfLinks {
+    order: 3;
+    background-color: rgb(251, 222, 242);
+    padding: 10px;
+}
+#mobile_first div.listOfLinks a {
+    color: rgb(95, 14, 77);
+    font-size: 15px;
+}
+#mobile_first .listOfLinks a:visited {
+    color: #9FA4AF;
+    text-decoration: none;
+}
+#mobile_first div.forma {
+    order: 4;
+    background-color: rgb(251, 222, 242);
+    margin-top: 20px;
+    padding: 10px;
+}
+#mobile_first #table1 {
+    order: 5;
+    padding: 10px;
+    margin-top: 10px;
+}
+#mobile_first table {
+    border: 3px solid rgb(72,72,72);
+    border-collapse: collapse;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+}
+#mobile_first th {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+#mobile_first td {
+    color: rgb(202, 10, 157);
+}
+#mobile_first tr {
+    height: 50px;
+    text-align: center;
+}
+#mobile_first td,tr,th {
+    border: 1px solid rgb(91, 91, 91);
+}
+#mobile_first div.footer1 {
+    order: 6;
+    background-color: rgb(246, 146, 223);
+    margin-top: 10px;
+}
+#mobile_first tr:nth-child(odd) {
+    background-color: rgb(251, 218, 239);
+}
+#mobile_first tr:nth-child(even) {
+    background-color: rgb(254, 157, 218);
+}
+#mobile_first footer {
+    color:black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 20px;
+}
+@media screen and (min-width: 800px) {
+#mobile_first div.header1 {
+    display: flex;
+    order: 1;
+}
+#mobile_first div.content { 
+    width: 960px;
+    margin: auto;
+}
+#mobile_first #navigation {
+    display: flex;
+    order: 2;
+    width: 960px;
+    margin: 0 auto;
+}
+#mobile_first nav {
+    display: flex;
+    flex-direction: row;
+}
+#mobile_first div.listOfLinks {
+    display: flex;
+    order: 3;
+    width: 960px;
+    margin: 0 auto;
+}
+#mobile_first div.forma {
+    display: flex;
+    order: 5;
+    width: 960px;
+    margin: auto;
+}
+#mobile_first #table1 {
+    display: flex;
+    order: 4;
+    width: 960px;
+    margin: 0 auto;
+}
+#mobile_first div.footer1 {
+    display: flex;
+    order: 6;
+    width: 100%;
+}
+#mobile_first footer {
+    margin: 0 auto;
+}
+}
