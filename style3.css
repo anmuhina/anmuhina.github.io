@@ -7,7 +7,7 @@
     margin: 0;
 }
 #mobile_first header {
-    /*display: flex;*/
+    display: flex;
     align-items: center;
     order: 1;
     border: 3px solid rgb(136, 2, 132);
@@ -122,7 +122,7 @@
     /*order: 2;*/
     max-width: 960px;
     margin: 0 auto;
-    /*display: flex;*/
+    display: flex;
     flex-direction: row;
 }
 #mobile_first div.listOfLinks {
