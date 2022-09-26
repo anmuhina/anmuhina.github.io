@@ -20,11 +20,13 @@
     float: left;
 }
 #mobile_first .logo-name {
+    display: flex;
+    align-items: center;
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-style: normal;
-    font-size: 60px;
+    font-size: 20pt;
 }
 #mobile_first h2 {
     color: black;
@@ -109,6 +111,9 @@
     font-size: 20px;
 }
 @media screen and (min-width: 800px) {
+#mobile_first .logo-name {
+    font-size: 36pt;
+}
 #mobile_first header {
     order: 1;
 }
