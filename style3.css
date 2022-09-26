@@ -144,7 +144,7 @@
 #mobile_first #table1 {
     display: flex;
     order: 4;
-    width: 960px;
+    width: 100%;
     margin: 0 auto;
 }
 #mobile_first div.footer1 {
