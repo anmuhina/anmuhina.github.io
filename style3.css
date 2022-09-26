@@ -111,6 +111,9 @@
     font-size: 20px;
 }
 @media screen and (min-width: 800px) {
+#mobile_first header span {
+    font-size: 60px;
+}
 #mobile_first header {
     display: flex;
     order: 1;
@@ -141,13 +144,16 @@
 #mobile_first #table1 {
     display: flex;
     order: 4;
-    width: 960px;
+    /*width: 960px;*/
+    width: 80%;
     margin: 0 auto;
+    font-size: 20px;
 }
 #mobile_first footer {
     display: flex;
     order: 6;
     width: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 }
