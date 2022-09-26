@@ -7,6 +7,8 @@
     margin: 0;
 }
 #mobile_first header {
+        display: flex;
+    align-items: center;
     order: 1;
     border: 3px solid rgb(136, 2, 132);
     background-color: rgb(246, 146, 223);
@@ -20,8 +22,6 @@
     float: left;
 }
 #mobile_first .logo-name {
-    display: flex;
-    align-items: center;
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
