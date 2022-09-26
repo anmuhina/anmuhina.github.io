@@ -7,7 +7,7 @@
     margin: 0;
 }
 #mobile_first header {
-        display: flex;
+    /*display: flex;*/
     align-items: center;
     order: 1;
     border: 3px solid rgb(136, 2, 132);
@@ -119,14 +119,14 @@
     margin: auto;
 }
 #mobile_first nav {
-    order: 2;
+    /*order: 2;*/
     max-width: 960px;
     margin: 0 auto;
-    display: flex;
+    /*display: flex;*/
     flex-direction: row;
 }
 #mobile_first div.listOfLinks {
-    order: 3;
+    /*order: 3;*/
     width: 960px;
     margin: 0 auto;
 }
@@ -136,16 +136,16 @@
     margin: auto;
 }
 #mobile_first #table1 {
-    display: flex;
+    /*display: flex;*/
     order: 4;
     width: 960px;
     margin: 0 auto;
 }
-    #mobile_first table {
-        font-size: 14pt;
-    }
+#mobile_first table {
+    font-size: 14pt;
+}
 #mobile_first footer {
-    order: 6;
+    /*order: 6;*/
     width: 100%;
 }
 #mobile_first footer span {
