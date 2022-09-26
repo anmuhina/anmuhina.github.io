@@ -3,11 +3,11 @@
     flex-direction: column;
 }
 #mobile_first body {
-    display: flex;
+    /*display: flex;*/
     width: 100%;
 }
 #mobile_first div.header1 {
-    display: flex;
+    /*display: flex;*/
     order: 1;
     border: 3px solid rgb(136, 2, 132);
     background-color: rgb(246, 146, 223);
@@ -38,16 +38,16 @@
     font-family: 'Times New Roman', Times, serif;
 }
 #mobile_first #navigation {
-    display: flex;
+    /*display: flex;*/
     order: 2;
 }
 #mobile_first nav {
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     padding: 20px;
 }
 #mobile_first div.listOfLinks {
-    display: flex;
+    /*display: flex;*/
     order: 3;
     background-color: rgb(251, 222, 242);
     padding: 10px;
@@ -61,14 +61,14 @@
     text-decoration: none;
 }
 #mobile_first div.forma {
-    display: flex;
+    /*display: flex;*/
     order: 4;
     background-color: rgb(251, 222, 242);
     margin-top: 20px;
     padding: 10px;
 }
 #mobile_first #table1 {
-    display: flex;
+    /*display: flex;*/
     order: 5;
     padding: 10px;
     margin-top: 10px;
@@ -96,7 +96,7 @@
     border: 1px solid rgb(91, 91, 91);
 }
 #mobile_first div.footer1 {
-    display: flex;
+    /*display: flex;*/
     order: 6;
     background-color: rgb(246, 146, 223);
     margin-top: 10px;
