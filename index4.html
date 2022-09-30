@@ -3,26 +3,171 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Задание 4</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <link rel="stylesheet" href="style4.css">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <link rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </head>
 <body>
+<header>
     <div class="container-fluid">
-        <div class="row d-flex mx-sm-3">
-            <header>
-                <div class="row aligh-items-center order-1">
-                <div class="col-9-align-self-center">
-                  <img id="logo" src="https://cdn-icons-png.flaticon.com/512/919/919827.png" alt="Лого">
-                  <span class="logo-name">WEB-разработка</span>
-                </div>
+        <div class="row d-flex">
+            <div class="col-12 order-1">
+                <div class="content m-auto">
+                <img class="logo my-3" src="https://cdn-icons-png.flaticon.com/512/919/919827.png" alt="Лого">
+                <span class="logo-name">WEB-разработка</span>
             </div>
-              </header>
+            </div>
+        </div>
     </div>
+</header>
+<nav class="m-auto py-3">
+    <div class="container">
+        <div class="row d-flex order-2 text-md-center">
+            <div class="col-12 col-md-4">
+                <a href="#link1">Список гиперссылок</a> 
+            </div>
+            <div class="col-12 col-md-4">
+                <a href="#link2">Таблица</a> 
+            </div>
+            <div class="col-12 col-md-4">
+                <a href="#link3">Форма</a> 
+            </div>
+        </div>
     </div>
+</nav>
+<div class="listOfLinks m-auto py-3 mb-3">
+    <div class="container">
+        <div class="row d-flex order-3">
+            <h2 id="link1">Список гиперссылок:</h2>
+            <div class="col-12">
+            <ol>
+                <li><a href="http://www.kubsu.ru/">абсолютная гиперссылка на главную страницу сайта</a></li>
+                <li><a href="https://www.kubsu.ru/">абсолютная гиперссылка на главную страницу сайта в протоколе https</a></li>
+                <li><a href="ftp://example.com/catalog/file.txt">ссылка на файл на сервере FTP без авторизации</a></li>
+                <li><a href="ftp://login:password@example.com/catalog/file.txt">ссылка на файл на сервере FTP с авторизацией</a></li>
+                <li><a href="https://www.kubsu.ru/ru/university#block-block-7">ссылка на фрагмент страницы некоторого сайта</a></li>
+                <li><a id="fragment"></a><a href="#fragment">ссылка на фрагмент текущей страницы</a></li>
+                <li><a href="http://example.com/catalog/parameters?parameter1&parametr2">ссылка с двумя параметрами в URL</a></li>
+                <li>
+                  <ul>
+                    <li><a href="https://www.kubsu.ru/">Официальный сайт Кубанского государственного университета</a></li>
+                    <li><a href="https://www.kubsu.ru/ru/university/library">Библиотека</a></li>
+                    <li><a href="https://www.kubsu.ru/ru/node/31611">Иностранным студентам</a></li>
+                    <li><a href="https://www.kubsu.ru/ru/abiturient">Абитуриентам</a></li>
+                  </ul>
+                </li>
+                <li><a>https://www.kubsu.ru/(ссылка без href)</a></li>
+                <li><a href="">ссылка с пустым href</a></li>
+                <li><a href="https://www.kubsu.ru/" rel="nofollow">ссылка, по которой запрещен переход поисковикам</a></li>
+                <li><a href="https://www.kubsu.ru/"><!--noindex-->ссылка, запрещенная для индексации поисковиками<!--/noindex--></a></li>
+                <li><p>Ссылки встречаются практически на всех <a href="https://html5css.ru/html/html_links.php">веб-страницах</a>. Ссылки позволяют пользователям щелкать их путь от страницы к странице.</p></li>
+                <li><p>ссылка-изображение</p><a href="https://vc.ru/design"><img src="https://leonardo.osnova.io/f6258c3b-6936-7d07-c60e-093ca7de3f00/-/preview/1200/-/format/webp/" alt="изображение-ссылка"></a></li>
+                <li><p>ссылки из прямоугольной(левый верхний угол) и круглой(правый нижний угол) областей</p><img src="https://leonardo.osnova.io/f6258c3b-6936-7d07-c60e-093ca7de3f00/-/preview/1200/-/format/webp/" usemap="#figures" alt="ссылки из прямоугольных и круглых областей картинки">
+                  <map name="figures">
+                    <area shape = "rect" coords = "24,13,316,263" href = "https://vc.ru/life" alt = "ссылка из прямоугольной области">
+                    <area shape = "circle" coords = "532,409,120" href = "https://vc.ru/hr" alt = "ссылка из круглой области">
+                  </map>  
+                </li>
+                <li><a href="page">относительная ссылка на страницу в текущем каталоге</a></li>
+                <li><a href="about/page">относительная ссылка на страницу в каталоге about</a></li>
+                <li><a href="../page">относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+                <li><a href="../../page">относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
+                <li><a href="/">сокращенная ссылка на главную</a></li>
+                <li><a href="/page">сокращенная ссылка на внутреннюю страницу</a></li>
+              </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row d-flex">
+        <div class="table1 col-12 m-auto my-3 py-3 order-5 order-md-4">
+            <h2 id="link2">Таблица:</h2>
+            <table class="m-auto">
+                <tr>
+                  <td></td>
+                  <th>Колонка 1</th>
+                  <th>Колонка 2</th>
+                  <th>Колонка 3</th>
+                </tr>
+                <tr>
+                  <th>Строка 1</th>
+                  <td colspan="2">Объединенные ячейки 11 и 12</td>
+                  <td>Ячейка 13</td>
+                </tr>
+                <tr>
+                  <th>Строка 2</th>
+                  <td>Ячейка 21</td>
+                  <td>Ячейка 22</td>
+                  <td>Ячейка 23</td>
+                </tr>
+                <tr>
+                  <th>Строка 3</th>
+                  <td>Ячейка 31</td>
+                  <td colspan="2">Объединенные ячейки 32 и 33</td>
+                </tr>
+                <tr>
+                  <th>Строка 4</th>
+                  <td>Ячейка 41</td>
+                  <td>Ячейка 42</td>
+                  <td>Ячейка 43</td>
+                </tr>
+                <tr>
+                  <th>Строка 5</th>
+                  <td colspan="3">Объединенные ячейки 51,52 и 53</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row d-flex">
+        <div class="forma col-12 m-auto my-3 py-3 order-4 order-md-5">
+            <h2 id="link3">Форма:</h2>
+            <form method="POST">
+              <label><br>
+                  Имя:<br>
+                  <input name="field-1" placeholder="Введите Ваше имя">
+              </label><br>
+              <label>
+                  Email:<br>
+                  <input name="field-email" type="email" placeholder="Введите вашу почту">
+              </label><br>
+              <label>
+                  Дата рождения:<br>
+                  <input name="field-date" type="date">
+              </label><br>
+              Пол:<br>
+                <label><input type="radio" checked="checked" name="radio-1"> Женщина </label>
+                <label><input type="radio" name="radio-1"> Мужчина </label><br />
+              Количество конечностей:<br />
+                <label><input type="radio" checked="checked" name="radio-2"> 2 </label>
+                <label><input type="radio" name="radio-2"> 3 </label>
+                <label><input type="radio" name="radio-2"> 4 </label><br>
+                <label>
+                  Сверхспособности:<br>
+                  <select name="field-2" multiple="multiple" placeholder="Выберите">
+                    <option value="Значение1">Бессмертие</option>
+                    <option value="Значение2">Прохождение сквозь стены</option>
+                    <option value="Значение3">Левитация</option>
+                  </select>
+                </label><br>
+                <label>
+                  Биография:<br />
+                    <textarea name="field-3" placeholder="Введите текст"></textarea>
+                </label><br>
+                <label><input type="checkbox" checked="checked" name="check">С контрактом ознакомлен(а)</label><br>
+              <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row d-flex pt-3">
+        <footer class="col-12 order-6 text-md-center">
+            <span>(c) Мухина Анна 2022</span>
+        </footer>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
