@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Задание 5</title>
+        <link rel="stylesheet" href="style5.css">
+        <script src="script5.js" defer></script>
+    </head>
+    <body>
+        <div class="forma">
+            <h1>Калькулятор стоимости заказа</h1>
+            <form method="POST" id="form1">
+                <label id="lable1">Цена товара(в рублях):</label><br>
+                <br>
+                    <input id="field1" type="text" name="price" placeholder="Введите цену товара"><br>
+                <br>
+                <br>
+                <label id="lable2">Количество товара:</label><br>
+                <br>
+                    <input  id="field2" type="text" name="amount" placeholder="Введите количество товара"><br>
+                <br>
+                <input id="button1" type="button" onclick="valid(document.getElementById('form1'))" name="button" value="Отправить">
+              </form>
+        </div>
+        <div id="result"></div>
+    </body>
+</html>
