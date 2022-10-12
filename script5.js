@@ -3,12 +3,12 @@ function valid(form) {
     var price=form.price.value;
     var amount=form.amount.value;
     var result=document.getElementById("result");
-    var price_ok=/[0-9.]/;
-    var amount_ok=/[0-9]/;
-    if (price_ok.test(price)==false || price<0) {
+    var price_ok=/^[0-9]+[\.]?[0-9]*$/;
+    var amount_ok=/^[1-9][0-9]*$/;
+    if (price_ok.test(price)==false) {
         fail="Неправильно введена цена товара!";
     }
-    else if (amount_ok.test(amount)==false || amount<0) {
+    else if (amount_ok.test(amount)==false) {
         fail="Неправильно введено количество товара!";
     }
     if (fail) {
