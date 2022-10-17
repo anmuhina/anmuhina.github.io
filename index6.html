@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Задание 5</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="forma">
+            <h1>Калькулятор стоимости заказа</h1>
+            <form method="POST" id="form1">
+                <label id="lable1">Количество товара:</label><br>
+                <br>
+                    <input  id="field1" type="text" name="amount" placeholder="Введите количество товара"><br>
+                <br>
+                <lable id="lable2">Тип товара:</lable><br>
+                <br>
+                <select name="selection">
+                    <option value="1">Книга Л.Н.Толстой "Война и мир"</option>
+                    <option value="2">Духи DOLCE&GABANNA L'Imperatrice</option>
+                    <option value="3">Пицца "Пепперони"</option>
+                </select>
+                <br>
+                <div class="radioBut" id="radioBut">
+                    <br>
+                    <lable id="lable3">Объем(в мл):</lable><br>
+                    <br>
+                    <label><input type="radio" name="radioBut" value="r1">30</label>
+                    <label><input type="radio" name="radioBut" value="r2">50</label>
+                    <label><input type="radio" name="radioBut" value="r3">75</label>
+                </div> 
+                <div class="check1" id="check1">
+                    <br>
+                    <lable id="lable4">Дополнительные ингредиенты:</lable><br>
+                    <br>
+                    <lable><input type="checkbox" name="c1" >Соленые оругчики</lable>
+                    <lable><input type="checkbox" name="c2">Доп.порция сыра</lable>
+                    <label><input type="checkbox" name="c3">Доп.порция колбасы</label>
+                </div>
+                <br>
+                <input id="button1" autocomplete="off" type="button" onclick="updatePrice(document.getElementById('form1'))" name="button" value="Отправить">
+              </form>
+        </div>
+        <div id="result"></div>
+    </body>
+</html>
