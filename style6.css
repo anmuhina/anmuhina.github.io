@@ -1,0 +1,49 @@
+body {
+    width: 100%;
+    margin: auto;
+}
+.forma {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    max-width: 960px;
+    background: linear-gradient(to top, rgb(211, 230, 248), rgb(46, 119, 188));
+}
+h1 {
+    font-size: 40px;
+    color: rgb(2, 26, 48);
+}
+#field1,select {
+    width: 550px;
+    font-size: 15px;
+    color: rgb(17, 57, 92);
+    border-color: rgb(2, 26, 48);
+    border-width: 2px;
+}
+#lable1,#lable2,#lable3,#lable4 {
+    font-size: 20px;
+    color: rgb(2, 26, 48);
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+#radioBut,#check1 {
+    font-size: 20px;
+    color: rgb(2, 26, 48);
+    font-family: 'Times New Roman', Times, serif;
+}
+#button1 {
+    font-size: 15px;
+    color: rgb(2, 26, 48);
+    background-color: rgb(146, 200, 251);
+}
+#result {
+    max-width: 960px;
+    padding: 30px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(2, 26, 48);
+    font-weight: bold;
+}
