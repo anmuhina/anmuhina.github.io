@@ -52,6 +52,7 @@ function updatePrice(form) {
     let result = document.getElementById("result");
     result.innerHTML = "Стоимость заказа: "+price*amount + " рублей.";
   }
+    return false;
 }
 
 function getPrices() {
