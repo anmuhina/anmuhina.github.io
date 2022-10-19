@@ -1,107 +1,83 @@
-function updatePrice(form) {
-    let fail=false;
-    let amount=form.amount.value;
-    let amount_ok=/^[1-9][0-9]*$/;
-    if (amount_ok.test(amount)==false) {
-        fail="Неправильно введено количество товара!";
+let prices = {
+  selections : [500, 3000, 700],
+  radioButs: {
+      r1 : 0,
+      r2 : 1500,
+      r3 : 3000,
+  },
+  checks: {
+      c1 : 20,
+      c2 : 15,
+      c3 : 25,
+  }
+};
+
+
+function get_price(){
+  let amount=document.querySelector("form#form1 > input[name=amount]").value;
+  let amount_ok=/^[1-9][0-9]*$/;
+  if (amount_ok.test(amount)==false) {
+      alert("Неправильно введено количество товара!");
+      return NaN;
+  } else {
+    let selector = document.querySelector("select[name=selection]");
+    let price = prices.selections[parseInt(selector.value) - 1];
+    let elements;
+    switch (parseInt(selector.value)) {
+      case 2:
+        elements = document.querySelectorAll("input[name=radioBut]:checked");
+        elements.forEach(function(element) {
+          price += prices.radioButs[element.value];
+        });
+        break;
+      case 3:
+        elements = document.querySelectorAll("div.check1 > label > input:checked");
+        elements.forEach(function(element) {
+          console.log(element.name);
+          price += prices.checks[element.name];
+        });
+        break;
+      default:
+        break;
     }
-    let s = document.getElementsByName("selection");
-    let select = s[0];
-    let price = 0;
-    let prices = getPrices();
-    let priceIndex = parseInt(select.value) - 1;
-    if (priceIndex >= 0) {
-      price = prices.selections[priceIndex];
-    }
-    let radioDiv = document.getElementById("radioBut");
-    radioDiv.style.display = (select.value == "2" ? "block" : "none");
-    let radios = document.getElementsByName("radioBut");
-    radios.forEach(function(radio) {
-      if (radio.checked) {
-        let optionPrice = prices.radioButs[radio.value];
-        if (optionPrice !== undefined) {
-          price += optionPrice;
-        }
-      }
-    });
-
-    /*let buttons=document.getElementById("radioBut").getElementsByTagName("input");
-    for (let i=0;i<buttons.length;i++)
-    buttons[i].checked=false;*/
-
-    let checkDiv = document.getElementById("check1");
-    checkDiv.style.display = (select.value == "3" ? "block" : "none");
-    let checkboxes = document.querySelectorAll("#check1 input");
-    checkboxes.forEach(function(checkbox) {
-      if (checkbox.checked) {
-        let propPrice = prices.checks[checkbox.name];
-        if (propPrice !== undefined) {
-          price += propPrice;
-        }
-      }
-    }); 
-
-    /*let buttons1=document.getElementById("check1").getElementsByTagName("input");
-    for (let i=0;i<buttons1.length;i++)
-    buttons1[i].checked=false;*/
-
-    if (fail) {
-        alert(fail);
-    }
-    else {
     let result = document.getElementById("result");
     result.innerHTML = "Стоимость заказа: "+price*amount + " рублей.";
   }
-    return false;
 }
 
-function getPrices() {
-    return {
-        selections : [500, 3000, 700],
-        radioButs: {
-            r1 : 0,
-            r2 : 1500,
-            r3 : 3000,
-        },
-        checks: {
-            c1 : 20,
-            c2 : 15,
-            c3 : 25,
-        }
-    };
+function updatePrice() {
+  let result = document.querySelector("div#result > span.result-text");
+  result.textContent = get_price();
 }
 
-window.addEventListener('DOMContentLoaded', function (event) {
-    let radioDiv = document.getElementById("radioBut");
-    radioDiv.style.display = "none";
-    let s = document.getElementsByName("selection");
-    let select = s[0];
-    select.addEventListener("change", function(event) {
-    let target = event.target;
-    console.log(target.value);
-    updatePrice(document.getElementById("form1"));
-    });
-    let radios = document.getElementsByName("radioBut");
-    radios.forEach(function(radio) {
-      radio.addEventListener("change", function(event) {
-        let r = event.target;
-        console.log(r.value);
-        updatePrice(document.getElementById("form1"));
-      });
-    });
-    let checkboxes = document.querySelectorAll("#check1 input");
-    checkboxes.forEach(function(checkbox) {
-      checkbox.addEventListener("change", function(event) {
-        let c = event.target;
-        console.log(c.name);
-        console.log(c.value);
-        updatePrice(document.getElementById("form1"));
-      });
-    });
-    updatePrice(document.getElementById("form1"));
-  });
+function updateView(){
+  let selector = document.querySelector("select[name=selection]");
+  console.log("update view");
+  console.log(selector.value);
+  switch (parseInt(selector.value)) {
+    case 2:
+      document.querySelector("div.check1").style.display = "none";
+      document.querySelectorAll("input[name=c1]").checked = false;
 
-function ready() {
-    console.log("DOM is ready");
+      document.querySelector("div.radioBut").style.display = "block";
+      document.querySelector("input[name=radioBut]").checked = true;
+      break;
+    case 3:
+      document.querySelector("div.radioBut").style.display = "none";
+      document.querySelectorAll("input[name=radioBut]").checked = false;
+
+      document.querySelector("div.check1").style.display = "block";
+      break;
+    default:
+      document.querySelector("div.radioBut").style.display = "none";
+      document.querySelector("div.check1").style.display = "none";
+      document.querySelectorAll("input[name=radioBut]").checked = false;
+      document.querySelectorAll("input[name=c1]").checked = false;
+  }
 }
-document.addEventListener("DOMContentLoaded",ready);
+
+console.log("DOM is ready");
+
+let selector = document.querySelector("select[name=selection]");
+updateView();
+selector.addEventListener("change", updateView);
