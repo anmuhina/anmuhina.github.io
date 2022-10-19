@@ -11,7 +11,7 @@
             <form method="POST" id="form1">
                 <label id="lable1">Количество товара:</label><br>
                 <br>
-                    <input  id="field1" type="text" name="amount" placeholder="Введите количество товара"><br>
+                    <input id="field1" type="text" name="amount" placeholder="Введите количество товара"><br>
                 <br>
                 <lable id="lable2">Тип товара:</lable><br>
                 <br>
@@ -21,7 +21,7 @@
                     <option value="3">Пицца "Пепперони"</option>
                 </select>
                 <br>
-                <div class="radioBut" id="radioBut">
+                <div class="radioBut" id="radioBut" style="display: none;">
                     <br>
                     <lable id="lable3">Объем(в мл):</lable><br>
                     <br>
@@ -29,18 +29,18 @@
                     <label><input type="radio" name="radioBut" value="r2">50</label>
                     <label><input type="radio" name="radioBut" value="r3">75</label>
                 </div> 
-                <div class="check1" id="check1">
+                <div class="check1" id="check1" style="display: block;">
                     <br>
-                    <lable id="lable4">Дополнительные ингредиенты:</lable><br>
+                    <label id="lable4">Дополнительные ингредиенты:</label><br>
                     <br>
-                    <lable><input type="checkbox" name="c1" >Соленые оругчики</lable>
-                    <lable><input type="checkbox" name="c2">Доп.порция сыра</lable>
+                    <label><input type="checkbox" name="c1">Соленые оругчики</label>
+                    <label><input type="checkbox" name="c2">Доп.порция сыра</label>
                     <label><input type="checkbox" name="c3">Доп.порция колбасы</label>
                 </div>
                 <br>
-                <input id="button1" autocomplete="off" type="button" onclick="updatePrice(document.getElementById('form1'))" name="button" value="Отправить">
+                <input id="button1" autocomplete="off" type="button" onclick="updatePrice()" name="button" value="Отправить">
               </form>
         </div>
         <div id="result"></div>
-    </body>
+</body>
 </html>
