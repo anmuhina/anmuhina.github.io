@@ -1,0 +1,34 @@
+.slider {
+    display: flex;
+    height: 220px;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider-line img  {
+    width: 300px;
+    height: 220px;
+}
+.slider-line {
+    display: flex;
+    height: 220px;
+    width: 4800px;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+.buttons {
+    text-align: center;
+    padding: 20px;
+}
+.next, .prev {
+    font-size: 20px;
+    color: rgb(1, 94, 70);
+    background-color: rgb(171, 254, 233);
+    padding: 7px;
+    border-radius: 10px;
+}
+.next:hover, .prev:hover {
+    color: rgb(0, 34, 26);
+    background-color: rgb(63, 255, 207);
+}
