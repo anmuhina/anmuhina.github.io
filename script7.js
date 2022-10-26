@@ -125,3 +125,10 @@ function forward_slide(){
 
 window.addEventListener("DOMContentLoaded", init);
 window.addEventListener("resize", resize, true);
+
+
+function ready() {
+    console.log("DOM is ready");
+}
+
+document.addEventListener("DOMContentLoaded",ready);
