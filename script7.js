@@ -2,6 +2,7 @@ $( document ).ready(function() {
  console.log( "ready!" );
 });
 
+document.addEventListener('DOMContentLoaded', function () {
 $('.responsive').slick({
     dots: true,
     arrows: true,
@@ -19,3 +20,4 @@ $('.responsive').slick({
     }
     ]
    });
+});
