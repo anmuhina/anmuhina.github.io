@@ -1,0 +1,22 @@
+/*$( '[type="submit"]' ).click(function() {
+    $.post("thankyou.html",function(data) {
+        $(".result").html(data);
+});
+  });*/
+
+var json = '{"key": "value"}';
+var obj = JSON.parse(json);
+alert(obj.key);
+// Создаем объект класса XMLHttpRequest.
+var xhr = new XMLHttpRequest();
+function go() {
+  // Настраиваем синхронный запрос.
+  xhr.open('GET', '', false);
+  // Отправляем запрос.
+  xhr.send();
+  // Выводим ответ сервера.
+  var element = document.getElementById('result');
+  element.innerHTML = xhr.responseText;
+  // Возвращаем false чтобы форма не отправлялась на сервер и страница не перезагружалась.
+  return false;
+}
